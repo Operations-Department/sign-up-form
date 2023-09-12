@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="script.js" defer></script>
-    <title>| Sign-up |</title>
+    <title>Chirs Form</title>
 </head>
 <body>
 
@@ -25,21 +25,39 @@
         <p>This is not a real online service! 
             You know you need something like this in your 
             life to help you realize your deepest dreams.
+            Sign up <em>now</em> to get started.
             <br>
-            Sign up <i>now</i> to get started.
             <br>
-            <br>
-            You <i>know</i> you want to.
+            You <em>know</em> you want to.
         </p>
     </div>
     <div id="form">
-        <div id="form-controls">
-            <p>Let's do this!</p>
-            
+        <div id="form-controls-left">
+            <p>Let's do this!</p><br>
+            <form action="" method="post">
+                <label for="first_name">First Name</label><br>
+                    <input id="first_name" name="user_first_name" required><br>
+                <label for="email">Email</label><br>
+                    <input type="email" id="email" name="user_email" required><br>
+                <label for="password">Password</label><br>
+                    <input type="password" id="password" name="user_password" required>
+                
+        </div>
+        <div id="form-controls-right"><br><br>
+                <label for="last_name">Last Name</label><br>
+                    <input for="last_name" name="user_last_name" required><br>
+                <label for="phone">Phone Number</label><br>
+                    <input type="tel" id="phone" name="user_phone" ><br>
+                <label for="password-confirm">Confirm Password</label><br>
+                    <input type="password" id="password-confirm" name="user_password_confirmation" required>
         </div>
     </div>
     <div id="submission">
-    
+        <div id="create-account">
+                <button>Create Account</button>
+                <p>Already have an account? <a href="">Log in</a></p>
+            </form>
+        </div>
     </div>
 </div>
 
