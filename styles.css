@@ -21,6 +21,11 @@ time, mark, audio, video {
 }
 
 
+:root {
+    --height: 33.33vh;
+    --width: 100%;
+}
+
 body {
     /* system font stack */
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -54,12 +59,12 @@ body {
     margin-top: 15rem;
 }
 
-.logo {
+#logo {
     height: 8rem;
     width: 7rem;
 }
 
-footer {
+#photo-credit {
     color: white;
     border: 2px dotted white;
     align-self: center;
@@ -71,8 +76,47 @@ a {
 }
 
 #form-container {
-    border: 2px dotted yellow;
+    /* border: 2px dotted yellow; */
     display: flex;
+    flex-direction: column;
     height: 100vh;
     width: 60vw;
+}
+
+#intro {
+    border: 2px dotted red;
+    height: var(--height);
+    width: var(--width);
+    display: flex;
+    justify-content: left;
+    align-items: end;
+    
+}
+
+#intro>p {
+    border: 2px dotted blue;
+    color: white;
+    height: 50%;
+    width: 100%;
+    font-size: 1.4375rem;
+    margin: 30px 45px 35px 25px;
+}
+
+#form {
+    border: 2px dotted blue;
+    height: var(--height);
+    width: var(--width);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-controls {
+    border: 2px dotted black;
+}
+
+#submission {
+    border: 2px dotted white;
+    height: var(--height);
+    width: var(--width);
 }
