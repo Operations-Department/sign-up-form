@@ -16,14 +16,13 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	/* font: inherit; */
 	vertical-align: baseline;
 }
 
 
 :root {
-    --height: 33.33vh;
-    --width: 100%;
+    --height: 30vh;
 }
 
 body {
@@ -34,7 +33,7 @@ body {
 }
 
 #image-container {
-    border: 2px dotted red;
+    /* border: 2px dotted red; */
     background-image: url(img/sky.jpg);
     height: 100vh;
     width: 40vw;
@@ -46,27 +45,27 @@ body {
 }
 
 #banner-logo {
+    /* border: 2px dotted green; */
     font-family: norse;
     color: white;
-    font-size: 6rem;
+    font-size: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px dotted green;
     height: 10rem;
     width: 100%;
-    background: rgba(0, 0, 0, .3); 
+    background: rgba(0, 0, 0, 0.2); 
     margin-top: 15rem;
 }
 
 #logo {
-    height: 8rem;
-    width: 7rem;
+    height: 9rem;
+    width: 9rem;
 }
 
 #photo-credit, a {
+    /* border: 2px dotted white; */
     color: white;
-    border: 2px dotted white;
     align-self: center;
     margin-top: auto;
 }
@@ -82,63 +81,79 @@ body {
 }
 
 #intro {
-    border: 2px dotted red;
+    /* border: 2px dotted red; */
     height: var(--height);
-    width: var(--width);
+    width: width: 100%;
     display: flex;
     justify-content: left;
     align-items: end;
 }
 
-#intro>p {
-    border: 2px dotted blue;
+#intro>p {2px 0px 40px 0.5px black
+    /* border: 2px dotted blue; */
     height: 50%;
     width: 100%;
-    margin: 30px 45px 35px 25px;
+    margin: 30px 45px 55px 25px;
 }
 
 #form {
-    height: var(--height);
-    width: var(--width);
+    height: 40vh;
+    width: 100%;
     display: flex;
     justify-content: left;
     align-items: center;
-    box-shadow: 5px 0px 10px 0.5px black;
+    gap: 25px;
+    box-shadow: 5px 0px 30px 0.5px rgba(0, 0, 0, 0.767);
 }
 
 #form-controls-left, #form-controls-right {
-    border: 2px dotted black;
-    margin-left: 25px;
-    width: 33%;
-    height: 95%;
+    /* border: 2px dotted black; */
+    padding: 75px 0px 0px 25px;
+    width: 44%;
+    height: 100%;
 }
 
-input:focus{
-    box-shadow: 0px 0px 15px 1px lightsteelblue;
+label {
+    font-size: 1rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+input {
+    height: 2rem;
+    width: 25rem;
     border: none;
+    border-radius: 5px;
+    outline: 0px; 
+    margin: 0px;
+    font-size: 1.25rem;
 }
 
-:valid {
-    border: 1px solid lightgreen;
+input:focus {
+    border: 2px solid black;
+    background-color: white;
+}
+
+input:required:valid {
+    border: 3px solid rgb(37, 230, 37);
 }
 
 input:required:invalid {
-    border: 1px solid red;
+    border: 2px solid rgb(252, 10, 10);
 }
 
 #submission {
-    border: 2px dotted white;
+    /* border: 2px dotted white; */
     height: var(--height);
-    width: var(--width);
+    width: 100%;
     display: flex;
     justify-content: left;
     align-items: start;
 }
 
 #create-account {
-    border: 2px dotted cyan;
-    margin-left: 25px;
-    margin-top: 25px;
+    /* border: 2px dotted cyan; */
+    margin: 55px 0px 0px 25px;
 }
 
 button {
@@ -146,15 +161,23 @@ button {
     height: 3rem;
     width: 13rem;
     color: white;
-    background: none;
-    border: 2px solid white;
+    background: rgb(167, 75, 166);
+    border: 3px solid rgb(167, 75, 166);
     border-radius: 15px;
     margin-bottom: 18px;
 }
 
 button:hover {
     cursor: pointer;
+    /* border: none; */
+    border: 3px solid rgb(167, 75, 166);
     background: white;
-    color: black;
-    transition: all ease-in-out 0.3s;
+    color: rgb(167, 75, 166);
+    transition: all ease-in-out 0.2s;
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.568);
+}
+
+#create-account>p {
+    font-size: 1.25rem;
 }
