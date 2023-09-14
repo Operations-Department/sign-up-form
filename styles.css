@@ -206,6 +206,7 @@ button {
     border: 3px solid rgb(167, 75, 166);
     border-radius: 15px;
     margin-bottom: 18px;
+    transition: all ease-in-out 0.2s;
 }
 
 button:hover {
@@ -213,7 +214,6 @@ button:hover {
     border: 3px solid rgb(167, 75, 166);
     background: white;
     color: rgb(167, 75, 166);
-    transition: all ease-in-out 0.2s;
     transform: translateY(-5px);
     box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.568);
 }
