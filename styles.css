@@ -20,10 +20,6 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-:root {
-    --height: 30vh;
-}
-
 @font-face {
     font-family: "Source-Sans-Pro";
     src: url(./fonts/SourceSansPro-Regular.ttf);
@@ -40,13 +36,15 @@ time, mark, audio, video {
     font-display: swap;
 }
 
-body {
+html, body {
     font-family: "Source-Sans-Pro";
-    background: linear-gradient(90deg, rgb(255, 192, 203), rgba(129, 0, 129, 0.719));
+    background: linear-gradient(to right, rgb(255, 192, 203), rgba(129, 0, 129, 0.719));
     display: flex;
     animation: fadeInAnimation ease-in 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    width: 100vw;
+    height: 100vh;
 }
 
 @keyframes fadeInAnimation {
@@ -62,7 +60,9 @@ body {
     /* border: 2px dotted red; */
     background-image: url(img/sky.jpg);
     height: 100vh;
+    min-height: 30vh;
     width: 40vw;
+    min-width: 400px;
     background-repeat: no-repeat;
     background-position: center center;
     display: flex;
@@ -78,15 +78,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10rem;
-    width: 100%;
+    height: 9rem;
+    min-width: 100%;
     background: rgba(255, 255, 255, 0.247); 
     margin-top: 15rem;
 }
 
 #logo {
-    height: 9rem;
-    width: 9rem;
+    height: 8rem;
+    width: 8rem;
 }
 
 #photo-credit, a {
@@ -101,15 +101,17 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    min-height: 30vh;
     width: 60vw;
+    min-width: 600px;
     color: white;
     font-size: 1.5rem;
 }
 
 #intro {
     /* border: 2px dotted red; */
-    height: var(--height);
-    width: width: 100%;
+    height: 30vh;
+    width: 100%;
     display: flex;
     justify-content: left;
     align-items: end;
@@ -117,14 +119,17 @@ body {
 
 #intro>h1 {
     /* border: 2px dotted blue; */
-    height: 50%;
+    height: max(100px, 50%);
     width: 100%;
+    min-width: 600px;
     margin: 30px 45px 55px 25px;
-    font-size: 26px;
+    font-size: clamp(0.5rem, 1.5rem, 2rem);
+    /* width: clamp(45ch, 50%, 75ch); */
 }
 
 #form {
     height: 40vh;
+    min-height: 350px;
     width: 100%;
     display: flex;
     justify-content: left;
@@ -137,6 +142,7 @@ body {
     /* border: 2px dotted black; */
     padding: 75px 0px 0px 25px;
     width: 44%;
+    min-width: 375px;
     height: 100%;
 }
 
