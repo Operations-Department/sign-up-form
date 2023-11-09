@@ -105,7 +105,7 @@ html, body {
     align-items: end;
 }
 
-#intro>h1 {
+#intro > h1 {
     /* border: 2px dotted blue; */
     height: max(100px, 50%);
     width: 100%;
@@ -138,7 +138,7 @@ html, body {
     margin-top: 14px;
 }
 
-#form-controls-left>h1 {
+#form-controls-left > h1 {
     font-size: 30px;
 }
 
@@ -156,6 +156,7 @@ input {
     outline: 0px; 
     margin: 0px;
     font-size: 1.25rem;
+    padding-left: 10px;
 }
 
 input:focus {
@@ -212,6 +213,6 @@ button:hover {
     box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.568);
 }
 
-#create-account>p {
+#create-account > p {
     font-size: 1.25rem;
 }
